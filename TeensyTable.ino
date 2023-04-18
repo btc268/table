@@ -129,19 +129,16 @@ int decayMax = 100;
 
 int filterCutoffLatched = 250;
 float filterQLatched  = 1.7;
-float filterOctaveControlLatched = 2;
-                                          // parameters for random synth filter generation
+float filterOctaveControlLatched = 2;         // parameters for random synth filter generation
 int filterCutoffUnlatched = 475;
 float filterQUnlatched  = 1.7;
 float filterOctaveControlUnlatched = 1;
 
+
+
 int lastLatchState[numUtensils] = { };
-
 int utensilPin[numUtensils] = {A7, A9, A5, A3};
-
 long utensilValue[numUtensils] = { };
-
-
 int latchedUtensilValue[numUtensils] = { };
 
 
@@ -170,7 +167,6 @@ int snareAttackMax = 50;
 int snareDecayMin = 500;
 int snareDecayMax = 1000;
 
-
 int snareStepDurationMin = 100;
 int snareStepDurationMax = 10000;
 
@@ -193,7 +189,6 @@ float drumSecondMixLevel = 0.2;
 
 float drumPitchModMin = 3;
 float drumPitchModMax = 7;
-
 
 int drumStepDurationMin = 500;
 int drumStepDurationMax = 20000;
