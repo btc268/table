@@ -8,4 +8,4 @@ A four-voice drone sounds when utensils are at rest. When a utensil is picked up
 
 Utilizes Teensy Audio Library.
 
-Video Demo: https://drive.google.com/file/d/1HQ8rztfq7NIy7jEHksWcQG6ZihZTBaGB/view?usp=share_link
+Video: https://drive.google.com/file/d/1HQ8rztfq7NIy7jEHksWcQG6ZihZTBaGB/view?usp=share_link
