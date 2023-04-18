@@ -82,8 +82,6 @@ AudioConnection          patchCord36(envelopeGranular, 0, mixerNonDrone, 3);
 AudioConnection          patchCord37(mixerNonDrone, 0, dacs1, 1);
 
 
-
-
 CapacitiveSensor   cs_33_32_knife = CapacitiveSensor(33, 32);       
 CapacitiveSensor   cs_33_31_fork = CapacitiveSensor(37, 31);       
 CapacitiveSensor   cs_34_30_spoon = CapacitiveSensor(34, 30);      
@@ -94,27 +92,17 @@ CapacitiveSensor   cs_36_26_chimes = CapacitiveSensor(36, 26);
 CapacitiveSensor   cs_36_25_granular = CapacitiveSensor(24, 25);       
 
 
-
-
 #define SDCARD_CS_PIN    BUILTIN_SDCARD
 #define SDCARD_MOSI_PIN  11 
 #define SDCARD_SCK_PIN   13  
 
-
-
 #define GRANULAR_MEMORY_SIZE 25600 
 int16_t granularMemory[GRANULAR_MEMORY_SIZE];
 
-
-
 #define numUtensils 8
-
-
 
 int readDuration = 250;
 unsigned long lastReadTime = 0;
-
-
 
 long csThreshold[numUtensils] = {5000, 5000, 5000, 5000, 5000, 5000, 5000, 5000}; 
 
@@ -135,7 +123,6 @@ float filterQUnlatched  = 1.7;
 float filterOctaveControlUnlatched = 1;
 
 
-
 int lastLatchState[numUtensils] = { };
 int utensilPin[numUtensils] = {A7, A9, A5, A3};
 long utensilValue[numUtensils] = { };
@@ -151,8 +138,6 @@ unsigned long lastStepTime[numUtensils] = { };
 
 int modifier = 0;
 int constrainedScaleStep = 0;
-
-
 
 
 
@@ -277,8 +262,6 @@ void setup() {
   waveform3.begin(0.1, 220.00, WAVEFORM_TRIANGLE);
   waveform4.begin(0.1, 220.00, WAVEFORM_TRIANGLE);
 
-
-
   sine1.amplitude(0.5);
   sine2.amplitude(0.5);
   sine3.amplitude(0.5);
@@ -317,8 +300,6 @@ void loop() {
 
 
 
-
-
   for (int i = 0; i < numUtensils; i++) {     
 
     if (utensilValue[i] > csThreshold[i]) {  
@@ -341,8 +322,6 @@ void loop() {
     }
   }
 }
-
-
 
 
 
@@ -391,7 +370,6 @@ void latch(int latchChannel) {
 
   }
 }
-
 
 
 
