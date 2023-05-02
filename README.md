@@ -2,7 +2,7 @@
 
 Interactive dinner table for two. 
 
-Utensils act as capacitive sensors. Sounds unique to a given utensil are triggered when the utensil is touched. 
+Utensils act as capacitive sensors. When a utensil is touched, sounds unique to that utensil are triggered. 
 
 A four-voice drone sounds when utensils are at rest. When a utensil is picked up and put back down, a corresponding drone voice rests on a new scale degree.
 
