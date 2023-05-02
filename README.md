@@ -1,6 +1,6 @@
 # table
 
-Interactive dinner table for two. 
+Interactive dining table for two. 
 
 Utensils act as capacitive sensors. When a utensil is touched, sounds unique to that utensil are triggered. 
 
