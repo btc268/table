@@ -4,7 +4,7 @@ Interactive dinner table for two.
 
 Utensils act as capacitive sensors. Sounds unique to each utensil are triggered when the utensil is touched. 
 
-A four-voice drone sounds when utensils are at rest. When a utensil is picked up and put back down, one voice of the drone rests on a new scale degree.
+A four-voice drone sounds when utensils are at rest. When a utensil is picked up and put back down, the corresponding drone voice rests on a new scale degree.
 
 Utilizes Teensy Audio Library.
 
